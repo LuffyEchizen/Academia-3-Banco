@@ -36,12 +36,17 @@ CREATE TABLE `login` (
 -- Volcado de datos para la tabla `login`
 --
 
-INSERT INTO `login` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`) VALUES
-(1, 'Administrador', '', 'admin@gmail.com', '123456', 1),
-(2, 'Joseph', '12345', 'josephg059@gmail.com', '', 2),
-(4, 'joseph', '12345', 'joseph@gmail.com', '', 2),
-(5, 'paul', '1234', 'paul@gmail.com', '', 2);
+INSERT INTO `login` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`,`cedula`) VALUES
+(1, 'Administrador', '', 'admin@gmail.com', '123456', 1,12),
+(2, 'Joseph', '12345', 'josephg059@gmail.com', '', 2, 13),
+(4, 'joseph', '12345', 'joseph@gmail.com', '', 2, 14),
+(5, 'paul', '1234', 'paul@gmail.com', '', 2, 15);
 
+INSERT INTO `login` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`,`cedula`) VALUES
+(3, 'victor', '123456', 'victor@gmail.com', '', 2, 15);
+
+INSERT INTO `login` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`,`cedula`) VALUES
+(6, 'cristian', '123456', 'cristian@gmail.com', '', 3, 16);
 --
 -- Índices para tablas volcadas
 --
@@ -64,6 +69,86 @@ ALTER TABLE `login`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- Creacion Tabla login 2
+-- Estructura de tabla para la tabla `login`
+--
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+CREATE TABLE `login2` (
+  `id` int(11) NOT NULL,
+  `user` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `pasadmin` varchar(250) NOT NULL,
+  `rol` int(3) NOT NULL,
+  `cedula` bigint NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `login`
+--
+
+INSERT INTO `login2` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`,`cedula`) VALUES
+(1, 'Administrador', '', 'admin@gmail.com', '123456', 1,12),
+(2, 'Joseph', '12345', 'josephg059@gmail.com', '', 3, 13),
+(4, 'joseph', '12345', 'joseph@gmail.com', '', 3, 14),
+(5, 'paul', '1234', 'paul@gmail.com', '', 3, 15);
+
+INSERT INTO `login2` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`,`cedula`) VALUES
+(3, 'victor', '123456', 'victor@gmail.com', '', 3, 15);
+
+INSERT INTO `login2` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`,`cedula`) VALUES
+(6, 'cristian', '123456', 'cristian@gmail.com', '', 3, 16);
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `login`
+--
+ALTER TABLE `login2`
+  ADD PRIMARY KEY (`id`,`cedula`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `login`
+--
+ALTER TABLE `login2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- finaliza creacion tabla login2
+create table Capacitaciones
+(codCapacitacion int primary key,
+Capacitacion varchar(30),
+Precio numeric);
+drop table Capacitaciones;
+insert into Capacitaciones values
+(1001, 'BIG_DATA',100000),
+(1002, 'PROGRAMACION MOVIL',40000),
+(1003, 'GERENCIA DE SISTEMAS',250000);
+
+create table Transaccion
+(CodTransaccion int primary key,
+Capacitacion varchar(30),
+Saldo numeric);
+
+insert into Transaccion values
+(1001, 'Paul',1000000),
+(1002, 'Victor',4000),
+(1003, 'lucas',25000);
 
 create table usuarios
 (cedula bigint primary key,

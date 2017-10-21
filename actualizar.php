@@ -139,7 +139,7 @@ if (@!$_SESSION['user']) {
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Copyright Lucas Padilla, Cristian Castaño y Esteban Colorado <br/><br/></p>
+<p>&copy; Copyright Lucas Padilla, Cristian Castaño  <br/><br/></p>
  </footer>
 </div><!-- /container -->
 

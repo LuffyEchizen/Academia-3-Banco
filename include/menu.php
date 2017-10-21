@@ -7,6 +7,7 @@
 		<ul class="nav">
 			<li class=""><a href="index2.php">Principal</a></li>
                         <li class=""><a href="Politicas.php">Politicas y Manuales</a></li>
+                         <li class=""><a href="Capacitaciones.php">Capacitaciones</a></li>
 	
 		</ul>
 		<form action="#" class="navbar-search form-inline" style="margin-top:6px">

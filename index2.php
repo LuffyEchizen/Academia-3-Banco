@@ -189,7 +189,7 @@ De ahí que el estudio de ésta asignatura proporciona los conocimientos y habil
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Copyright Lucas Padilla, Cristian Castaño y Esteban Colorado <br/><br/></p>
+<p>&copy; Copyright Lucas Padilla, Cristian Castaño <br/><br/></p>
  </footer>
 </div><!-- /container -->
     

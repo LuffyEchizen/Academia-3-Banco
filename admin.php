@@ -42,7 +42,7 @@ if (@!$_SESSION['user']) {
 	<div class="container">
 	  <div class="nav-collapse">
 		<ul class="nav">
-			<li class=""><a href="admin.php">ADMINISTRADOR DEL SITIO</a></li>
+                    <li class=""><a href="index2.php">ADMINISTRADOR DEL SITIO</a></li>
 			 <li class=""><a href="adminenlaces.php">ADMINISTRAR BASE DE DATOS</a></li>
                          
                         
@@ -172,7 +172,7 @@ if (@!$_SESSION['user']) {
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Copyright Lucas Padilla, Cristian Castaño y Esteban Colorado <br/><br/></p>
+<p>&copy; Copyright Lucas Padilla, Cristian Castaño <br/><br/></p>
  </footer>
 </div><!-- /container -->
 
